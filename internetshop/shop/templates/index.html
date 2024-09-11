@@ -16,31 +16,17 @@
 
 <div class="productList">
 
+    {% for product in products %}
 <div class="product">
-    <img src="{% static 'monowheel.webp' %}">
+    <img src="{{ product.image_url }}">
     <div>
-        <h2>Моноколесо</h2>
-        <p>Моноколесо — это современное средство передвижения, которое становится всё более популярным в городах.
-
-            Оно представляет собой одно колесо с двумя подножками по бокам и электрическим двигателем. Моноколесо компактное, лёгкое и удобное в использовании.</p>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
     </div>
      <div class="priceSection">
-        <h3>19 990 ₽</h3>
+         <h3>{{ product.price }} ₽</h3>
         <button>Купить</button>
     </div>
 </div>
-
-
-<div class="product">
-    <img src="https://i-market.shop/upload/iblock/851/s6s9ph8vew900s1c1lx12afcfkhivntt.jpg">
-    <div>
-        <h2>Смарт часы</h2>
-        <p>Смарт-часы — это устройство, которое сочетает в себе функции часов и фитнес-трекера.
-            Они могут отслеживать физическую активность, измерять пульс, считать шаги и калории, а также показывать уведомления о звонках и сообщениях.</p>
-    </div>
-    <div class="priceSection">
-        <h3>19 990 ₽</h3>
-        <button>Купить</button>
-    </div>
-</div>
+    {% endfor %}
 </div>
