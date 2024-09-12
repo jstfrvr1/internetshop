@@ -42,8 +42,12 @@
     color: #04aa6d;
 }
 
-h2 {
+.textGreen {
     color: #04aa6d;
+}
+
+.textRed {
+    color: #aa0404;
 }
 
 .logo {
@@ -122,3 +126,30 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    }
+
+.reviewHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.reviewHeader * {
+    margin: 0;
+    }
+
+.createReviewForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.createReviewForm * {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.inputElement {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #a6a6a6;
+    }
