@@ -35,4 +35,9 @@ class Migration(migrations.Migration):
             name='speed',
             field=models.FloatField(blank=True, null=True),
         ),
+        migrations.AlterField(
+            model_name='product',
+            name='weight',
+            field=models.IntegerField(blank=True, null=True),
+        ),
     ]
